@@ -1,0 +1,92 @@
+<!Doctype html>
+<head>
+<meta charset="utf-8">
+<title>Ginny's Website</title>
+<!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
+<link href="style.css" rel="stylesheet" type="text/css">
+
+
+
+
+</head>
+<body>
+	
+<header>
+	<nav>
+	<div class="nav">
+	<ul class="navbar">
+		<li class="nav_ul" id="index-1"><a href="#">我的主页</a></li>
+		<li class="nav_ul" id="index-2"><a href="#">我的简介</a></li>
+		<li class="nav_ul" id="index-3"><a href="#">我的作品</a></li>
+		<li class="nav_ul" id="index-4"><a href="#">我的技能</a></li>
+		<li class="nav_ul" id="index-5"><a href="#">联系我吧</a></li>
+	</ul>
+	<div>
+	
+   
+   <div class="hide_box">
+	<div id="box-1">
+	   <ul>
+	     <li class="hide_li"><a href="#">我的主页</a></li>
+	     <li class="hide_li"><a href="#">我的主页</a></li>
+	   </ul>
+    </div>
+
+
+	<div id="box-2">
+	   <ul>
+	     <li class="hide_li"><a href="#">我的简介</a></li>
+	     <li class="hide_li"><a href="#">我的简介</a></li>
+	     <li class="hide_li"><a href="#">我的简介</a></li>
+	   </ul>
+    </div>
+
+
+	<div id="box-3">
+	   <ul>
+	     <li class="hide_li"><a href="#">Html5</a></li>
+	     <li class="hide_li"><a href="#">Css</a></li>
+	     <li class="hide_li"><a href="#">Javascript</a></li>
+	     <li class="hide_li"><a href="#">Jquery</a></li>
+	     <li class="hide_li"><a href="#">Ajax</a></li>
+	   </ul>
+    </div>
+
+    <div id="box-4">
+	   <ul>
+	     <li class="hide_li"><a href="#">Html5</a></li>
+	     <li class="hide_li"><a href="#">Css</a></li>
+	     <li class="hide_li"><a href="#">Javascript</a></li>
+	     <li class="hide_li"><a href="#">Jquery</a></li>
+	     <li class="hide_li"><a href="#">Ajax</a></li>
+	   </ul>
+    </div>
+    </div>
+    </nav>
+</header>
+
+
+  
+ 
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+ 	$(document).ready(function(){
+ 		var num;
+ 		 $('.navbar>li[id]').hover(function(){
+ 		 	 var Obj = $(this).attr('id');
+        num = Obj.substring(6, Obj.length);
+        $('#box-'+num).slideDown(400);
+    });
+
+       /*  $("#index-1").mouseover(function(){
+         	$("#box-1").slideDown(400);
+        }); */
+         $(".nav").mouseleave(function(){
+         	$('#box-'+num).slideUp(200);
+         });
+       
+ 	});
+
+ </script>
+</body>
+</html>
