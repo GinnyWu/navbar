@@ -1,0 +1,74 @@
+html,body,p,h1,h2,h3,h4,h5,h6,form,input,textarea,select,button,fieldset,legend,img,ul,ol,li,dl,dt,dd,th,td,pre,blockquote{margin:0;padding:0}
+
+body{
+	width: 900px;
+	margin: auto;
+}
+
+.navbar{
+	margin: 100px;
+}
+.nav_ul{
+	float: left;
+
+}
+
+.nav_ul a{
+	padding: 10px 20px;
+    background-color: #666699;
+	color: white;
+}
+
+
+
+
+ul li{
+	list-style: none;
+}
+ul li a{
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+
+}
+
+#box-1{
+	position: absolute;
+	top:150px;
+	left: 335px;
+}
+
+#box-2{
+	position: absolute;
+	top:150px;
+	left: 460px;
+}
+
+#box-3{
+	position: absolute;
+	top:150px;
+	left: 582px;
+	
+}
+
+#box-4{
+	position: absolute;
+	top:150px;
+	left: 708px;
+}
+
+.hide_li a{
+	background-color: #ccc;
+	width: 75px;
+    padding-left:15px;
+}
+
+.hide_li a:hover{
+	background-color: #666699;
+	color: white;
+}
+
+#box-1,#box-2,#box-3,#box-4{
+	display: none;
+}
